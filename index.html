@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Secret Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    (function () {
+      var language = navigator.language || navigator.userLanguage || "en";
+
+      if (language === "zh-TW" || language === "zh-HK" || language === "zh-MO" || language.startsWith("zh-Hant")) {
+        window.location.replace("./zh-Hant/support.html");
+      } else if (language.startsWith("zh")) {
+        window.location.replace("./zh-Hans/support.html");
+      } else if (language.startsWith("ja")) {
+        window.location.replace("./ja/support.html");
+      } else {
+        window.location.replace("./en/support.html");
+      }
+    })();
+  </script>
+</head>
+<body>
+<main>
+  <h1>Privacy Secret Box</h1>
+  <p>Please select your language.</p>
+
+  <section>
+    <h2>English</h2>
+    <ul>
+      <li><a href="./en/support.html">Support</a></li>
+      <li><a href="./en/privacy.html">Privacy Policy</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>简体中文</h2>
+    <ul>
+      <li><a href="./zh-Hans/support.html">技术支持</a></li>
+      <li><a href="./zh-Hans/privacy.html">隐私政策</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>繁體中文</h2>
+    <ul>
+      <li><a href="./zh-Hant/support.html">技術支援</a></li>
+      <li><a href="./zh-Hant/privacy.html">隱私權政策</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>日本語</h2>
+    <ul>
+      <li><a href="./ja/support.html">サポート</a></li>
+      <li><a href="./ja/privacy.html">プライバシーポリシー</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
